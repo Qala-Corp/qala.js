@@ -1,0 +1,69 @@
+{
+  "name": "qala.js",
+  "version": "0.8.4",
+  "description": "Minimal Node.js solution for secure access to encrypted data, using ephemeral tokens.",
+  "author": "Javid Fataliyev",
+  "license": "GNU GPLv3",
+  "main": "index.js",
+  "security": "dev",
+  "setup": "standalone",
+  "security_levels": [
+    "dev",
+    "prod"
+  ],
+  "setup_modes": [
+    "standalone",
+    "Integrated",
+    "env"
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test:integrated": "nodemon --watch ./qala.js --watch ./examples/integrated.js ./examples/integrated.js",
+    "test:standalone": "nodemon --watch ./qala.js --watch ./examples/standalone.js ./examples/standalone.js",
+    "postinstall": "./lib/doc.sh"
+  },
+  "keywords": [
+    "NodeJS",
+    "ENV",
+    "security",
+    "data",
+    "storage",
+    "vault",
+    "encryption",
+    "AES-256-GCM",
+    "ECDH",
+    "secp256k1",
+    "sharedSecret",
+    "sha256",
+    "HKDF",
+    "token",
+    "JWT"
+  ],
+
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/qala.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/qala/issues"
+  },
+  "homepage": "https://github.com/yourusername/qala#readme"
+}
