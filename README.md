@@ -1,6 +1,6 @@
-# Qala
+# Qalá
 
-A minimalistic secure environment variables and secrets keeper.
+A discrete, multipurpose, secure environment variables and secrets guard.
 
 [![npm version](https://img.shields.io/npm/v/qala.svg)](https://www.npmjs.com/package/qala)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -101,7 +101,7 @@ main();
 
 ### 3. Integrated Mode
 
-Embed Qala directly into your Express application:
+Embed Qala directly into your Express, Koa or other similar application:
 
 ```javascript
 const express = require('express');
@@ -138,7 +138,7 @@ Qala includes Docker support for easy deployment:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/qala.git
+git clone https://github.com/Qala-Security/qala.js.git
 cd qala
 
 # Run the deployment script

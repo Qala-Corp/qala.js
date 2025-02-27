@@ -1,25 +1,15 @@
 {
   "name": "qala.js",
   "version": "0.8.4",
-  "description": "Minimal Node.js solution for secure access to encrypted data, using ephemeral tokens.",
+  "description": "Discrete Node.js solution for secure access to encrypted data, using ephemeral tokens.",
   "author": "Javid Fataliyev",
   "license": "GNU GPLv3",
   "main": "index.js",
-  "security": "dev",
-  "setup": "standalone",
-  "security_levels": [
-    "dev",
-    "prod"
-  ],
-  "setup_modes": [
-    "standalone",
-    "Integrated",
-    "env"
-  ],
   "scripts": {
     "test": "mocha",
     "test:integrated": "nodemon --watch ./qala.js --watch ./examples/integrated.js ./examples/integrated.js",
     "test:standalone": "nodemon --watch ./qala.js --watch ./examples/standalone.js ./examples/standalone.js",
+    "test:env": "nodemon --watch ./qala.js --watch ./examples/env.js ./examples/env.js",
     "postinstall": "./lib/doc.sh"
   },
   "keywords": [
