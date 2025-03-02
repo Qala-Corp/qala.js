@@ -1,6 +1,6 @@
 {
-  "name": "qala.js",
-  "version": "0.8.4",
+  "name": "qala",
+  "version": "0.8.7",
   "description": "Discrete Node.js solution for secure access to encrypted data, using ephemeral tokens.",
   "author": "Javid Fataliyev",
   "license": "GNU GPLv3",
@@ -10,7 +10,7 @@
     "test:integrated": "nodemon --watch ./qala.js --watch ./examples/integrated.js ./examples/integrated.js",
     "test:standalone": "nodemon --watch ./qala.js --watch ./examples/standalone.js ./examples/standalone.js",
     "test:env": "nodemon --watch ./qala.js --watch ./examples/env.js ./examples/env.js",
-    "postinstall": "./lib/doc.sh"
+    "postinstall": "node lib/doc.js"
   },
   "keywords": [
     "NodeJS",
@@ -29,7 +29,6 @@
     "token",
     "JWT"
   ],
-
   "dependencies": {
     "crypto": "^1.0.1",
     "express": "^4.21.2",
@@ -50,10 +49,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/qala.git"
+    "url": "https://github.com/Qala-Security/qala.js.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/qala/issues"
+    "url": "https://github.com/Qala-Security/qala.js/issues"
   },
-  "homepage": "https://github.com/yourusername/qala#readme"
+  "homepage": "https://github.com/Qala-Security/qala.js"
 }
