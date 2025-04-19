@@ -1,7 +1,7 @@
 {
   "name": "qala",
-  "version": "0.9.0",
-  "description": "Discrete solution for secure management of environment variables and secrets.",
+  "version": "0.8.7",
+  "description": "Discrete Node.js solution for secure access to encrypted data, using ephemeral tokens.",
   "author": "Javid Fataliyev",
   "license": "GNU GPLv3",
   "main": "index.js",
